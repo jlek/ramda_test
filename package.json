@@ -6,10 +6,14 @@
   "author": "John <jlek@findmypast.com>",
   "license": "MIT",
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.19.0",
-    "eslint-config-google": "^0.7.1"
+    "eslint-config-google": "^0.7.1",
+    "mocha": "^3.2.0"
   },
   "scripts": {
-    "lint": "eslint ./**/*.js"
+    "lint": "eslint ./**/*.js",
+    "test": "mocha --recursive ./**/*.spec.js",
+    "test:watch": "yarn run test -- --watch"
   }
 }
