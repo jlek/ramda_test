@@ -4,5 +4,12 @@
   "description": "Personal testing ground for ramda.",
   "main": "index.js",
   "author": "John <jlek@findmypast.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1"
+  },
+  "scripts": {
+    "lint": "eslint ./**/*.js"
+  }
 }
