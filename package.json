@@ -15,5 +15,8 @@
     "lint": "eslint ./**/*.js",
     "test": "mocha --recursive ./**/*.spec.js",
     "test:watch": "yarn run test -- --watch"
+  },
+  "dependencies": {
+    "ramda": "^0.23.0"
   }
 }
