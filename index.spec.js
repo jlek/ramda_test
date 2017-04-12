@@ -41,12 +41,10 @@ describe('index.js', function() {
       peopleDateOfBirth[ernie.id] = new Date(1980, 3, 21);
 
       // Act
-      const getAgeDescriptionsForCurrentDate =
-        getAgeDescriptions(currentDate);
-      const getAgeDescriptionsWithDobs =
-        getAgeDescriptionsForCurrentDate(peopleDateOfBirth);
-      const ageDescriptions =
-        getAgeDescriptionsWithDobs(people);
+      const ageDescriptions = getAgeDescriptions(
+        currentDate,
+        peopleDateOfBirth,
+        people);
 
       // Assert
       ageDescriptions.should.deep.equal([
